@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Health App</title>
+		<!-- Bootstrap -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+			<link href="css/iOS.css" rel="stylesheet">
+			<script src="js/jquery.js"></script> 
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/gatracking.js"></script>
+			<style>
+				.row-fluid{
+					margin-top:10px;
+					}
+				.alert{
+					margin-bottom:0px;
+				}
+			</style>
+	</head>
+	<body>
+	<div class="navbar navbar-fixed-top" id="navbar">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></a>
+				<a class="btn pull-left" href="Dashboard.html"><i class="icon-chevron-left"></i></a>
+				<a class="brand">Alert Status</a>
+				<div class="nav-collapse collapse">
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top:40px;">
+		<div class="row-fluid">	
+			You missed a dosage of Cialis on 4/17.
+			<hr>
+			This is the 3rd missed dosage in 30 days.
+			<button type="button">Call my Doctor</button>
+			<button type="button">Change Reminders</button>
+			<button type="button">Change Alerts</button>
+			<button type="button">Additional Info</button>
+			<hr>
+			<b>Dosage History:</b> 92% Adherence<br>
+			<div class="alert alert-error">
+				<strong>4/17:</strong>Missed 3PM dosage
+			</div>
+			<div class="alert alert-success">
+				<strong>4/17:</strong>12PM Dosage taken at 11:45AM
+			</div>
+			<div class="alert alert-success">
+				<strong>4/17:</strong>9AM Dosage taken at 9:05AM
+			</div>
+			<div class="alert">
+				<strong>4/16:</strong>3PM dosage taken at 4:23PM
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+		
+			

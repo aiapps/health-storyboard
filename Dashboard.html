@@ -38,14 +38,17 @@
 	</div>
 	<div class="container-fluid" style="margin-top:40px;">
 		<div class="row-fluid">
-			<h5>MY MEDICATIONS</h5>
-			<h6><a href="Medications.html?MedID=1"><b>Zyprexa</b> - 9:00AM Daily</a></h6>
-			<h6><a href="Medications.html?MedID=2"><b>Cialis</b> - 9AM, 12pm, 3pm Daily</a></h6>
-			<h6><a href="Medications.html?MedID=2"><b>Effient</b> - 9:00PM Tuesday</a></h6>
+			<h5>TODAY'S MEDICATIONS</h5>
+			<h6><a href="Medications.html?MedID=1"><b>Zyprexa</b> - 9:00AM Daily</a>
+			<button type="button" class="pull-right" onClick='$(this).prop("disabled")'>Taken</button></h6>
+			<h6><a href="Medications.html?MedID=2"><b>Cialis</b> - 9AM, 12pm, 3pm Daily</a>
+			<button type="button" class="pull-right" >Taken</button></h6>
+			<h6><a href="Medications.html?MedID=2"><b>Effient</b> - 9:00PM Tuesday</a>
+			<button type="button" class="pull-right" >Taken</button></h6>
 		</div>
 		<div class="row-fluid">
 			<h5>ALERTS</h5>
-			<div class="alert alert-error">
+			<div class="alert alert-error" onclick="location.href='AlertStatus.html?AlertID=1';" style="cursor: pointer;">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
 				<strong>Missed Dosage</strong> You missed a Cialis dosage on 4/17.
 			</div>
